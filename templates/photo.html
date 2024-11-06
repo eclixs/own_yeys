@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Загрузка фото</title>
+</head>
+<body>
+    <h1>Добавить фото</h1>
+    <form method="post" enctype="multipart/form-data" class="form-control">
+        <br>
+        <label for="photo">Фото:</label>
+        <input type="file" id="photo" name="photo" accept="image/*">
+        <br>
+        <label for="category">Категория:</label>
+        <select name="category" class="form-control" required>
+            <option value="Базовый Python">Турция</option>
+            <option value="Базовый Python">Россия</option>
+            <option value="Базовый Python">Армения</option>
+        </select>
+        <br>
+        <button class="btn btn-success" type="submit"> Добавить</button>
+    </form>
+</body>
+</html>
