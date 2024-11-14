@@ -1,6 +1,6 @@
 {% extends "main_templates.html" %}
 {% block title %} Travel {% endblock %}
-{% block body %}
+{% block style %}
     <meta content="" name="description">
     <meta content="" name="author">
     <meta content="" name="keywords">
@@ -25,57 +25,9 @@
     <link href="static/css/owl.theme.css" rel="stylesheet">
     <link href="static/css/on3step-style.css" rel="stylesheet">
     <link href="static/css/queries-on3step.css" media="all" rel="stylesheet">
-    <!-- preloader -->
-    <div class="bg-preloader-white"></div>
-    <div class="preloader-white">
-      <div class="mainpreloader">
-        <span></span>
-      </div>
-    </div>
-    <!-- preloader end -->
-    
-    <!-- content wraper -->
-   <!-- content wrapper -->
-<div class="content-wrapper">
-    <!-- section projects -->
-    <section aria-label="works" id="projects">
-        <div class="container-fluid">
-            <div class="row">
-                <!-- project -->
-                <div class="v-align">
-                    <div class="col-md-11 col-xs-12">
-                        <div id='w-gallery-container' class="w-gallery-container">
-                            [("static/img/projects-w/п1.png",), ("static/img/projects-w/11.jpg",), ...]
-                            <div class="w-gallery">
-                                <div class="projects-grid onStep" data-animation="fadeInUp" data-time="0">
-                                    <div class="hovereffect-color">
-                                        <img src="{<!-- -->{ image[0] }}" alt="Image" class="w-gallery-image">
-                                        <div class="overlay">
-                                            <div class="v-align wrap">
-                                                <span class="icon">
-                                                    <a class="big-img-1" href="{<!-- -->{ image[0] }}">
-                                                        <i class="fa fa-search"></i>
-                                                    </a>
-                                                    <a href="projects-detail.html">
-                                                        <i class="fa fa-link"></i>
-                                                    </a>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            {% endfor %}
-                        </div>
-                    </div>
-                </div>
-                <!-- project end -->
-            </div>
-        </div>
-    </section>
-    <!-- section projects end -->
-</div>
-<!-- content wrapper end -->
+{% endblock %}
+
+{% block body %}
       
       <!-- subheader -->
       <section id="subheader">
@@ -101,7 +53,7 @@
           <div class="v-align">
           <div class="col-md-11 col-xs-12">
             <!-- filter project -->
-                <ul id="filter-hide" class="init">
+                <ul id="filter-hide" class="id="projects"">
                   <li class="filtter-icon"><i class="ti-layout-grid3-alt"></i>
                   </li>
                 </ul>
@@ -126,7 +78,27 @@
             <!-- filter project end -->
             
                 <div id="w-gallery-container" class="w-gallery-container">
-                
+                 {% for image in images %}
+                            <div class="w-gallery">
+                                <div class="projects-grid onStep" data-animation="fadeInUp" data-time="0">
+                                    <div class="hovereffect-color">
+                                        <img src="{{ image.photo }}" alt="Image" class="w-gallery-image">
+                                        <div class="overlay">
+                                            <div class="v-align wrap">
+                                                <span class="icon">
+                                                    <a class="big-img-1" href="{{ image.photo }}">
+                                                        <i class="fa fa-search"></i>
+                                                    </a>
+                                                    <a href="projects-detail.html">
+                                                        <i class="fa fa-link"></i>
+                                                    </a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
                     <div class="w-gallery asia aus eur">
                      <div class="projects-grid">
                       <div class="hovereffect-color">

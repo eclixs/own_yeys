@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d15fc798-8cd1-4841-85a6-0556ad964252" name="Changes" comment="Add files" />
+    <list default="true" id="d15fc798-8cd1-4841-85a6-0556ad964252" name="Changes" comment="Add files">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/instance/database.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/about-3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/ecommerce-checkout.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/ecommerce-form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/ecommerce-payment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/ecommerce.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/main_templates.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main_templates.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/works.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/works.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,7 +47,7 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/eclixs/python.git&quot;,
+    &quot;url&quot;: &quot;https://github.com/eclixs/own_yeys.git&quot;,
     &quot;accountId&quot;: &quot;1ab3ecc6-1ec5-497a-a4ab-0310fa15d41d&quot;
   }
 }</component>
@@ -84,7 +98,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730908898129</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add files">
+      <option name="closed" value="true" />
+      <created>1730910047634</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1730910047634</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

@@ -1,8 +1,6 @@
-<!DOCTYPE html>
-<html lang="zxx">
-  <head>
-    <meta charset="utf-8">
-    <title>Plesire | Interactive Travel Template</title>
+{% extends "main_templates.html" %}
+{% block title %} Travel {% endblock %}
+      {% block style %}
     <meta content="" name="description">
     <meta content="" name="author">
     <meta content="" name="keywords">
@@ -27,78 +25,11 @@
     <link href="static/css/owl.theme.css" rel="stylesheet">
     <link href="static/css/on3step-style.css" rel="stylesheet">
     <link href="static/css/queries-on3step.css" media="all" rel="stylesheet">
-  </head>
+  {% endblock %}
   
-  <body>
-  
-    <!-- preloader -->
-    <div class="bg-preloader-white"></div>
-    <div class="preloader-white">
-      <div class="mainpreloader">
-        <span></span>
-      </div>
-    </div>
-    <!-- preloader end -->
-    
-    <!-- content wraper -->
-   <div class="content-wrapper">
-    
-   <header class="init">
+{% block body %}
 
-    <!-- subnav -->
-    <div class="container-fluid m-5-hor">
-    <div class="row">
-        <div class="subnav">
 
-         <div class="col-md-6">
-          <div class="left">
-            <div class="social-icons-subnav hidden-sm hidden-xs">
-                <div>Call Us : +02151 7778 009</div>
-            </div>
-          </div>
-         </div>
-
-         <div class="col-md-6">
-          <div class="right">
-            <div id="sub-icon" class="social-icons-subnav">
-                <a href="#"><span class="ti-facebook"></span></a>
-                <a href="#"><span class="ti-dribbble"></span></a>
-                <a href="#"><span class="ti-twitter"></span></a>
-                <a href="#"><span class="ti-instagram"></span></a>
-                <a href="#"><span class="ti-linkedin"></span></a>
-            </div>
-            <div class="social-icons-subnav">
-              <a data-toggle="modal" data-target="#fLogin"><span class="ti-lock"></span> Login</a>
-            </div>
-            <div class="social-icons-subnav hidden-sm hidden-xs">
-              <a data-toggle="modal" data-target="#fsignUp"><span class="ti-user"></span> Sign up</a>
-            </div>
-          </div>
-         </div>
-
-        </div>
-    </div>
-    </div>
-    <!-- subnav end -->
-
-      <!-- nav -->
-      <div class="navbar-default-white navbar-fixed-top">
-        <div class="container-fluid m-5-hor">
-        <div class="row">
-        
-           <!-- menu mobile display -->
-           <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
-           <span class="icon icon-bar"></span> 
-           <span class="icon icon-bar"></span> 
-           <span class="icon icon-bar"></span></button> 
-
-        </div>
-        </div>
-        <!-- container -->
-      </div>
-      <!-- nav end -->
-      </header>
-      
       <!-- subheader -->
       <section id="subheader">
         <div class="container-fluid m-5-hor">
@@ -124,14 +55,16 @@
                <div class="col-lg-6 autoheight-1">
                 <div class="p-90">
                   <h2 class="big-heading space-title">
-                    A Perfect Place Vacation
+                    Британская короткошерстная
                     <span class="devider-cont"></span>
                   </h2>          
 
-                  <p class="intro">              
+                  <p class="intro"></p>
 
-Это всегда путь к успеху. Это большое преимущество курса, иначе за званием игрока будут следить. </p> CКогда горы родят своих партнеров и родятся с перьями и большими толчками, родится забавная мышь. Ожидается, что даже шлюз в энергосистему будет большим и мягким. Vivamus sagittis lacus vel auge laoreet rutrum faucibus dolor auctor.
-Вместе со своими товарищами горы родят перья и великие толчки, и на свет появится нелепая мышь. Ожидается, что даже шлюз в энергосистему будет большим и мягким. Мы живем со стрелами.</div>
+Британская короткошёрстная кошка — крупная порода, имеющая массивное, коренастое телосложение.
+У представителей этой породы широкая грудная клетка и толстый хвост.
+Морда, уши, глаза и голова имеют округлую форму. У этих кошек короткий широкий нос и массивная нижняя челюсть.
+Шерсть — короткая и густая, без пушистости, бывает более ста окрасов и множество комбинаций пятен.</div>
               <div class="clearfix"></div>
              </div>
                         
@@ -150,14 +83,16 @@
                 <div class="col-lg-6 autoheight-2">
                  <div class="p-90">
                   <h2 class="big-heading space-title">
-                    About Our Service
+                    Мейн-кун
                     <span class="devider-cont"></span>
                   </h2>
                   
-                  <p class="intro">Это большое преимущество курса, иначе за званием игрока будут следить. Вместе со своими товарищами горы родят перья и великие толчки, и на свет появится нелепая мышь.</p>
-                  
-                  один из товарищей и горы родят перья и большие толчки, родится смешная мышь. Ожидается, что даже шлюз в энергосистему будет большим и мягким. Vivamus sagittis lacus vel auge laoreet rutrum faucibus dolor auctor.
-Вместе со своими товарищами горы родят перья и великие толчки, и на свет появится нелепая мышь. Ожидается, что даже шлюз в энергосистему будет большим и мягким. Мы живем со стрелами.
+                  <p class="intro"></p>
+
+Мейн-кун — самая крупная порода кошек. Она отличается мощным, мускулистым телом и крепкими ногами.
+Голова клиновидной формы. Уши — большие и высокие.
+Шерсть длинная и густая, состоит из подшерстка, покрытого плотной блестящей водонепроницаемой шерстью.
+Волоски на голове, шее и плечах короче и увеличиваются в длину ближе к нижней части спины, на боках и хвосте.
                   </div>
                 <div class="clearfix"></div>
                </div>
@@ -745,5 +680,5 @@
     <!-- on3step JS -->
     <script src="static/js/on3step.js"></script>
     <script src="static/js/plugin-set.js"></script>
-  </body>
+  {% endblock %}
 </html>
