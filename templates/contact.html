@@ -60,21 +60,19 @@
           <div class="row">
           
             <div class="col-md-8">
-                <form id="form-contact1">
-                            <div class="form-group user-name">
-                                <input type="text" class="form-control" required="" id="name-contact-1" placeholder="Your Name">
-                            </div>
+               <form id="form-contact1" action="/contact" method="POST">
+                    <div class="form-group user-name">
+                        <input type="text" name="name" class="form-control" required="" id="name-contact-1" placeholder="Ваше имя">
+                    </div>
 
-                            <div class="form-group user-email">
-                                <input type="email" class="form-control" required="" id="email-contact" placeholder="Your Email">
-                            </div>
-                        
-                            <div class="form-group user-message">
-                                <textarea class="form-control" required="" id="message-contact" placeholder="Your Message"></textarea>
-                                <div class="success" id="mail_success">Thank you. Your message has been sent</div>
-                                <div class="error" id="mail_failed">Error, email not sent</div>
-                            </div>
-                    <button type="submit" id="send-contact-1" class="btn-contact">Send Now</button>
+                    <div class="form-group user-email">
+                        <input type="email" name="email" class="form-control" required="" id="email-contact" placeholder="Ваша почта">
+                    </div>
+
+                    <div class="form-group user-message">
+                        <textarea class="form-control" name="message" required="" id="message-contact" placeholder="Ваше сообщение"></textarea>
+                    </div>
+                    <button type="submit" id="send-contact-1" class="btn-contact">Отправить заявку</button>
                 </form>
             </div>
             

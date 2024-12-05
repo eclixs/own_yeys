@@ -1870,24 +1870,25 @@ ul#services-list {
 }
 /* projects max width */
 
+/* projects max width */
 #w-gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 столбца одинаковой ширины */
+    gap: 20px; /* Расстояние между элементами */
     text-align: center;
     overflow: hidden;
 }
 .w-gallery {
-    margin: 0 auto;
     width: 100%;
+    margin: 0;
     border: 4px solid rgba(0, 0, 0, 0);
-}
-.w-gallery:after {
-    content: '';
-    display: block;
-    clear: both;
+    overflow: hidden;
 }
 .w-gallery-image {
     width: 100%;
     display: block;
     height: auto;
+    object-fit: cover; /* Обрезка лишнего */
 }
 /* Our Works end */
 

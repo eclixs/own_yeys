@@ -34,9 +34,19 @@ def blog():
     return render_template("blog.html")
 
 
-@app.route("/contact")
+@app.route("/contact", methods=['POST', 'GET'])
 def contact():
-    return render_template("contact.html")
+    if request.method == 'POST':
+        name = request.form['name']
+        print(name)
+    elif request.method == 'POST':
+        email = request.form['email']
+        print(email)
+    elif request.method == 'POST':
+        message = request.form['message']
+        print(message)
+    else:
+        return render_template("contact.html")
 
 
 app.config['UPLOAD_FOLDER'] = 'static/uploads'
