@@ -1871,25 +1871,25 @@ ul#services-list {
 /* projects max width */
 
 /* projects max width */
-#w-gallery-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 столбца одинаковой ширины */
-    gap: 20px; /* Расстояние между элементами */
-    text-align: center;
-    overflow: hidden;
-}
-.w-gallery {
-    width: 100%;
-    margin: 0;
-    border: 4px solid rgba(0, 0, 0, 0);
-    overflow: hidden;
-}
-.w-gallery-image {
-    width: 100%;
-    display: block;
-    height: auto;
-    object-fit: cover; /* Обрезка лишнего */
-}
+
+    /* Контейнер галереи */
+    #w-gallery-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Три столбца одинаковой ширины */
+        gap: 20px; /* Отступы между элементами по горизонтали и вертикали */
+    }
+
+    /* Элемент галереи */
+    .w-gallery {
+        box-sizing: border-box; /* Учитываем отступы и границы */
+    }
+
+    /* Стили для изображений */
+    .w-gallery img {
+        width: 100%; /* Изображения занимают всю ширину элемента */
+        height: auto; /* Сохраняем пропорции */
+        display: block; /* Убираем лишние отступы между строками */
+    }
 /* Our Works end */
 
 /******* projects detail ******/

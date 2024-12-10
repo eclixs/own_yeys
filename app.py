@@ -39,10 +39,8 @@ def contact():
     if request.method == 'POST':
         name = request.form['name']
         print(name)
-    elif request.method == 'POST':
         email = request.form['email']
         print(email)
-    elif request.method == 'POST':
         message = request.form['message']
         print(message)
     else:
