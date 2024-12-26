@@ -19,10 +19,13 @@ class Photo(db.Model):
 def index():
     return render_template("index.html")
 
-
-@app.route("/works")
+@app.route('/works')
 def works():
-    images = Photo.query.all()
+    user_chose = request.args.get('category')
+    if user_chose:
+        images = Photo.query.filter_by(category=user_chose).all()
+    else:
+        images = Photo.query.all()
     return render_template('works.html', images=images)
 
 @app.route("/about")
