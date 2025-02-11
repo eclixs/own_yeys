@@ -1802,10 +1802,11 @@ ul#services-list {
 
 #filter-porto {
     padding: 0;
-    margin: 0 auto;
-    margin-bottom: 15px;
-    text-align: left;
-    margin-left: 4px;
+    margin: 0 ;
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 #filter-hide {
     padding: 0;
@@ -1837,36 +1838,8 @@ ul#services-list {
     display: inline-block;
     list-style: none;
 }
-#filter-porto li.filt-projects, #filter-porto li.filt-projects-w {
-    font-size: 9pt;
-    font-weight: 500;
-    border: 1px solid rgba(0, 0, 0, 0);
-    padding: 4px 15px 4px 15px;
-    margin: 0 10px 10px 0;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    cursor: pointer;
-    display: inline-block;
-    list-style: none;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-}
-#filter-porto li.filt-projects:hover, #filter-porto li.filt-projects-w:hover {
-    border: 1px solid #fc9f1c;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-}
-#filter-porto li.selected {
-    border: 1px solid #efefef;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.2s ease;
+
+
 }
 /* projects max width */
 

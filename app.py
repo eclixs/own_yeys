@@ -15,6 +15,7 @@ class Photo(db.Model):
     category = db.Column(db.String(200), nullable=False)
 
 
+@app.route("/")
 @app.route("/index")
 def index():
     return render_template("index.html")
@@ -99,4 +100,4 @@ def add_page():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, host="0.0.0.0")
